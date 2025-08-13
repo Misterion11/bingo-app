@@ -9,7 +9,9 @@ export default defineConfig({
   plugins: [
     vue(),
     vueDevTools(),
+
   ],
+      base: '/bingo-app',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
